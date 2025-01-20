@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de contacto </title>
+    <link rel="stylesheet" href="./style_formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1 class="Bienvenida">Bienvenidos al Blog sobre Perros</h1>
+    <p class="Bienvenida">Este blog es para fomentar la apreciacion y amor hacia los perros</p>
+    <img src="images/perros_pequenos.jpg" alt="Perro" width="200" height="100">
+    </header>
+
+    <section>
+        <h2 class="formulario-titulo">Contáctanos</h2>
+        <p class="formulario-descripcion">Si deseas recibir información sobre perros en adopción o contarnos sobre tu experiencia con perros, completa este formulario:</p>
+        <form action="#" method="post" class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+    
+            <label for="correo">Correo de contacto:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+    
+            <label for="telefono">Número de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" pattern="[0-9]{10}" required>
+    
+            <label for="tienes-perro">¿Tienes perro?</label>
+            <select id="tienes-perro" name="tienes-perro" required>
+                <option value="">Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+    
+            <label for="raza">Si tienes perro, ¿qué raza es?</label>
+            <input type="text" id="raza" name="raza" placeholder="Ingresa la raza de tu perro">
+    
+            <label for="adoptar">¿Estás dispuesto a adoptar?</label>
+            <select id="adoptar" name="adoptar" required>
+                <option value="">Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+    
+            <div class="checkbox">
+                <input type="checkbox" id="consentimiento" name="consentimiento" required>
+                <label for="consentimiento">Acepto recibir información sobre perros en adopción</label>
+            </div>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+    <h3 class="biografia">Biografía del autor:</h3>
+    <p class="biografia">Soy Emiliano Flores, amante de los perros y padre de 2 hermosos perrhijos, una mestiza de 2 años y un salchicha adoptado de 6 años.</p>
+    </footer>
+</body>
+</html>
